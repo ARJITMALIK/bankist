@@ -301,7 +301,7 @@ transferButton.addEventListener("click", function () {
     transferInput.value &&
     transferUser.value !== currentUser.username &&
     transferInput.value > 0 &&
-    transferInput.value < Number(total.value)
+    transferInput.value < Number(total.textContent)
   ) {
     if (transferUser.value === "am") {
       transferToUser = users.user1;
