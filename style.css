@@ -1,0 +1,221 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f0ebeb;
+}
+.hidden {
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.appname {
+  margin-left: 0;
+  margin-right: auto;
+  font-family: "Montserrat", sans-serif;
+  width: 300px;
+}
+.appname p {
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.appLogo {
+  margin: 0 auto;
+}
+
+.appLogo img {
+  height: 100px;
+  width: 100px;
+  padding: 20px;
+}
+
+.credentials {
+  margin-left: auto;
+  margin-right: 0px;
+}
+
+#loginForm {
+  padding: 20px;
+}
+
+#inputUserName,
+#inputPassword {
+  padding: 10px;
+  width: 70px;
+  margin: 0px 5px;
+  border: none;
+  border-radius: 50px;
+  background-color: #e0dcdc;
+  outline: none;
+  text-align: center;
+}
+
+.btn {
+  border: none;
+  border-radius: 50px;
+  background-color: transparent;
+  outline: none;
+}
+
+.card {
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: lighter;
+}
+
+#appContainer {
+  width: 70%;
+  margin: 0 auto;
+  transition: 0.5s ease-in-out;
+}
+.details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.activities {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.movements {
+  width: 48%;
+  background-color: white;
+  border-radius: 10px;
+  overflow: scroll;
+  max-height: 550px;
+}
+.controls {
+  width: 48%;
+}
+
+.move-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.move-status {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 50%;
+}
+
+.summary {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: "Montserrat", sans-serif;
+}
+.transactionsSummary {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 50%;
+}
+
+.timer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 50%;
+}
+
+/* Now from here styling elements starts */
+
+.p1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.p2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  color: grey;
+}
+
+.totalMoney {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+}
+
+.loan {
+  background-color: #73ce6d;
+}
+.transfer {
+  background-color: #ffbc03;
+}
+.closeAcc {
+  background-color: #f2425c;
+}
+
+input {
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  outline: white;
+  margin: 5px;
+  height: 30px;
+}
+
+.move-row {
+  padding: 20px;
+}
+.movemove {
+  border-radius: 20px;
+  padding: 5px 10px;
+  color: white;
+}
+.move1 {
+  background-color: green;
+}
+.move2 {
+  background-color: red;
+}
+.movementDate {
+  padding: 5px;
+}
+
+.in {
+  color: #50fa7b;
+  font-size: 25px;
+}
+.out {
+  color: red;
+  font-size: 25px;
+}
+.intrst {
+  color: #ff5f00;
+  font-size: 25px;
+}
+.total {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  background-color: transparent;
+}

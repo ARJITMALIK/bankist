@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BANKIST</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <div class="appname">
+        <p>Login to get started</p>
+      </div>
+      <div class="appLogo">
+        <img src="logo.png" alt="Error showing image" />
+      </div>
+      <div class="credentials">
+        <form id="loginForm">
+          <input type="text" placeholder="USER" id="inputUserName" />
+          <input type="password" placeholder="PIN" id="inputPassword" />
+          <button form="loginForm" class="btn loginButton">
+            <i class="fa fa-arrow-right"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="hidden" id="appContainer">
+      <div class="details">
+        <div class="accInfo">
+          <p class="p1">Current Balance</p>
+          <p class="p2">As of DATE/TIME</p>
+        </div>
+        <div class="totalMoney"><span class="total"></span></div>
+      </div>
+      <div class="activities">
+        <div class="movements">
+          <div class="movements-move">
+            <div class="move-row">
+              <div class="move-status">
+                <div id="movementType" class="movemove"></div>
+                <div class="movementDate"></div>
+              </div>
+              <div class="move-money"></div>
+            </div>
+          </div>
+        </div>
+        <div class="controls">
+          <div class="loan card">
+            <h1>Apply for loan</h1>
+            <input type="text" class="loanInput" placeholder="Amount" />
+            <button type="submit" class="btn loanButton">
+              <i class="fa fa-arrow-right"></i>
+            </button>
+          </div>
+          <div class="transfer card">
+            <h1>Transfer Money</h1>
+            <input type="text" class="transferUser" placeholder="Transfer to" />
+            <input
+              type="text"
+              class="transferInput"
+              placeholder="Amount to transfer"
+            />
+            <button type="submit" class="btn transferButton">
+              <i class="fa fa-arrow-right"></i>
+            </button>
+          </div>
+          <div class="closeAcc card">
+            <h1>Close Account</h1>
+            <input type="text" class="closeUser" placeholder="Confirm User" />
+            <input type="text" class="closePIN" placeholder="Confirm PIN" />
+            <button type="submit" class="btn closeButton">
+              <i class="fa fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="summary">
+        <div class="transactionsSummary">
+          <div class="incoming">IN<span class="in"> $23000 </span></div>
+          <div class="outgoing">OUT<span class="out"> $4300</span></div>
+          <div class="sort">
+            <button class="sortButton btn">
+              <i class="fa fa-angle-down"></i> SORT
+            </button>
+            <button class="unsortButton btn">
+              <i class="fa fa-angle-down"></i> UNSORT
+            </button>
+          </div>
+        </div>
+        <div class="timer">TIME</div>
+        <!-- TODO: set actual timer-->
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
