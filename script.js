@@ -141,7 +141,7 @@ function displayTotal(currentUser) {
   for (let i = 0; i < currentUser.movements.length; i++) {
     sum += Number(currentUser.movements[i]);
   }
-  total.textContent = ` $${Math.abs(sum)}`;
+  total.textContent = sum;
 }
 
 function sortDisplay(currentUser) {
