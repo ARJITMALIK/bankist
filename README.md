@@ -1,5 +1,7 @@
 # bankist
 Minimal banking demo app
+NOTE: the web is not responsive for mobile devices yet , prefer opening it on a laptop or desktop
+
 
 Handle and keep track of your deposits and withdrawls , transfer money to another user , take instant loan , create your own personal account(functionality yet to be added), delete account and much more.
 
